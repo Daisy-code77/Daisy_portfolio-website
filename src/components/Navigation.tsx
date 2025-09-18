@@ -11,6 +11,8 @@ const Navigation = () => {
     { id: 'skills', label: 'Skills' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
+    { id: 'education', label: 'Education' },
+    { id: 'awards', label: 'Awards' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -49,8 +51,8 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
+            <div className="flex items-baseline space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -65,6 +67,11 @@ const Navigation = () => {
                 </button>
               ))}
             </div>
+            
+            {/* Resume Button */}
+            <button className="px-4 py-2 rounded-md text-sm font-medium border border-primary/30 text-primary hover:bg-primary/10 transition-all duration-300">
+              Resume
+            </button>
           </div>
 
           {/* Mobile menu button */}

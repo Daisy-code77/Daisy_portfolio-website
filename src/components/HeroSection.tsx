@@ -33,48 +33,43 @@ const HeroSection = () => {
               <span className="gradient-text">Daisy R</span>
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
-              Aspiring Full-Stack Developer | AI Enthusiast | Tech Speaker
+              Computer Science Engineering Student | Software Developer | AI Enthusiast | Team Leader
             </h2>
-            <div className="flex items-center justify-center gap-2 text-muted-foreground mb-8">
-              <MapPin size={20} />
-              <span>India</span>
+            <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
+              Passionate & self-driven CSE student with strong foundation in software development and problem-solving. Exploring real-world applications through research initiatives and hands-on projects.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground mb-8">
+              <div className="flex items-center gap-2">
+                <Mail size={16} />
+                <span>daisy11092004@gmail.com</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin size={16} />
+                <span>India</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone size={16} />
+                <span>+91 9176215330</span>
+              </div>
             </div>
-          </div>
-
-          {/* Contact Links */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12 scroll-reveal">
-            {contactLinks.map((link, index) => (
-              <Button
-                key={index}
-                variant="outline"
-                size="sm"
-                asChild
-                className="glass-card hover-lift"
-              >
-                <a href={link.href} target="_blank" rel="noopener noreferrer">
-                  <link.icon size={16} className="mr-2" />
-                  {link.text}
-                </a>
-              </Button>
-            ))}
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center scroll-reveal">
             <Button
               size="lg"
-              className="gradient-bg hover:opacity-90 transition-opacity"
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              className="gradient-bg hover:opacity-90 transition-opacity px-8"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              View My Work
+              Get In Touch
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="glass-card"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="glass-card border-primary/30 text-primary hover:bg-primary/10 px-8"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Get In Touch
+              View Projects
             </Button>
           </div>
         </div>
