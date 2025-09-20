@@ -81,8 +81,7 @@ portfolio-website/
 
 Clone the repo:
 
-git clone https://github.com/yourusername/portfolio-website.git
-cd portfolio-website
+git clone : https://github.com/Daisy-code77/Daisy_portfolio-website.git
 
 Install dependencies:
 
